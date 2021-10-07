@@ -1,2 +1,2 @@
 # sdg
-A simple debugger to understand more about debuggers.
+A hobby project to understand debuggers more than I already do.
