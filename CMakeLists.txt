@@ -20,7 +20,8 @@ if(UNIX)
     include_directories(include/sdg)
     list(APPEND SOURCES 
         "source/linux/target.cpp"
-        "source/linux/debugger.cpp")
+        "source/linux/debugger.cpp"
+        "source/interactive.cpp")
 else()
     # include_directories(windows)
 endif()

@@ -1,13 +1,7 @@
 #include "debugger.hpp"
 
-
 #include <sys/ptrace.h>
 #include <sys/wait.h>
-
-#include <stdarg.h>
-#include <unistd.h>
-#include <sys/reg.h>
-#include <sys/user.h>
 
 #include <iostream>
 

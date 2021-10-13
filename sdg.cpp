@@ -1,7 +1,6 @@
 #include <iostream>
 
-#include "target.hpp"
-#include "debugger.hpp"
+#include "interactive.hpp"
 
 #include <unistd.h>
 
@@ -13,12 +12,7 @@ int main(int argc, char* const* argv)
         return EXIT_FAILURE;
     }
 
-    if(auto child_pid = start_target(argv);
-        child_pid != -1)
-    {
-        start_debugging(child_pid);
-    }
-    
+    start_interactive(argv);
 
     return EXIT_SUCCESS;
 }
